@@ -388,6 +388,16 @@ return [
             'icon_color' => 'blue',
             'url'        => 'TipoLicencia',
         ],
+        [
+            'text'       => 'CRUD Grado',
+            'icon_color' => 'blue',
+            'url'        => 'Especialidad',
+        ],
+        [
+            'text'       => 'CRUD Sexo',
+            'icon_color' => 'blue',
+            'url'        => 'Reparticion',
+        ],
     ],
 
     /*
