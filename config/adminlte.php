@@ -388,24 +388,6 @@ return [
             'icon_color' => 'blue',
             'url'        => 'TipoLicencia',
         ],
-        [
-            'text'       => 'CRUD Grado',
-            'icon_color' => 'blue',
-<<<<<<< HEAD
-            'url'        => 'Grado',
-=======
-            'url'        => 'Especialidad',
->>>>>>> bf0ca3dfd4d292312dedf3799546601450d33be4
-        ],
-        [
-            'text'       => 'CRUD Sexo',
-            'icon_color' => 'blue',
-<<<<<<< HEAD
-            'url'        => 'Sexo',
-=======
-            'url'        => 'Reparticion',
->>>>>>> bf0ca3dfd4d292312dedf3799546601450d33be4
-        ],
     ],
 
     /*
