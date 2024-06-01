@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TipoLicenciaController;
 use App\Http\Controllers\GradoController;
 use App\Http\Controllers\SexoController;
+use App\Http\Controllers\PersonaController;
+use App\Http\Controllers\ReparticionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,8 +41,13 @@ Route::get('/home', function() {
 //     Route::get('/update/{id}', [TipoLicenciaController::class, 'update'])->name('TipoLicencia.update');
 //     Route::delete('/destroy/{id}', [TipoLicenciaController::class, 'destroy'])->name('TipoLicencia.destroy');
 //     Route::delete('/{id}/edit', [TipoLicenciaController::class, 'edit'])->name('TipoLicencia.edit');
-// }); 
+// });
 
 
 Route::resource('TipoLicencia', TipoLicenciaController::class);
+
+Route::resource('Persona', PersonaController::class);
+Route::resource('Reparticion', ReparticionController::class);
+
+
 

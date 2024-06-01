@@ -18,7 +18,6 @@ class CreateTipoReparticion extends Migration
             $table->integer('Num')->unsigned()->nullable();
             $table->string('TipoReparticion', 150)->nullable();
             $table->string('Sigla', 50)->nullable();
-
             $table->nullableTimestamps();
             $table->SoftDeletes();
             $table->string('CreatorUserName', 250)->nullable();
