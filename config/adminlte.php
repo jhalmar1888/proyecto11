@@ -388,6 +388,12 @@ return [
             'icon_color' => 'blue',
             'url'        => 'TipoLicencia',
         ],
+        [
+            'text'       => 'CRUD TipoArma',
+            'icon_color' => 'cyan',
+            'icon'       => 'fas fa-user-secret', // Icono de un soldado con rifle
+            'url'        => 'arma',
+        ],
     ],
 
     /*

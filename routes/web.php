@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TipoLicenciaController;
+use App\Http\Controllers\armaController;
 use App\Http\Controllers\GradoController;
 use App\Http\Controllers\SexoController;
 
@@ -30,7 +31,7 @@ Route::get('/home', function() {
 })->name('home')->middleware('auth');
 
 
-// /****************************************** TIPO LICENCIA *********************************/
+// /************** TIPO LICENCIA ***********/
 // Route::group(['prefix' => 'TipoLicencia'], function () {
 //     Route::get('/index', [TipoLicenciaController::class, 'index'])->name('TipoLicencia.index');
 //     Route::post('/store', [TipoLicenciaController::class, 'store'])->name('TipoLicencia.store');
@@ -43,4 +44,4 @@ Route::get('/home', function() {
 
 
 Route::resource('TipoLicencia', TipoLicenciaController::class);
-
+Route::resource('arma', armaController::class);
