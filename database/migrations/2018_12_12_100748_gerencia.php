@@ -14,7 +14,6 @@ class Gerencia extends Migration
             $table->string('Gerencia', 250)->nullable();
             $table->string('Sigla', 20)->nullable();
             $table->string('Alias', 20)->nullable();
-            $table->integer('idSaga')->nullable();
 
             $table->nullableTimestamps();
             $table->SoftDeletes();
