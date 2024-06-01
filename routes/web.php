@@ -5,6 +5,8 @@ use App\Http\Controllers\TipoLicenciaController;
 use App\Http\Controllers\armaController;
 use App\Http\Controllers\GradoController;
 use App\Http\Controllers\SexoController;
+use App\Http\Controllers\PersonaController;
+use App\Http\Controllers\ReparticionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,8 +42,17 @@ Route::get('/home', function() {
 //     Route::get('/update/{id}', [TipoLicenciaController::class, 'update'])->name('TipoLicencia.update');
 //     Route::delete('/destroy/{id}', [TipoLicenciaController::class, 'destroy'])->name('TipoLicencia.destroy');
 //     Route::delete('/{id}/edit', [TipoLicenciaController::class, 'edit'])->name('TipoLicencia.edit');
-// }); 
+// });
 
 
 Route::resource('TipoLicencia', TipoLicenciaController::class);
+<<<<<<< HEAD
 Route::resource('arma', armaController::class);
+=======
+
+Route::resource('Persona', PersonaController::class);
+Route::resource('Reparticion', ReparticionController::class);
+
+
+
+>>>>>>> 554e2234471abc608d7f231ed65c0a2843766dd0

@@ -389,11 +389,24 @@ return [
             'url'        => 'TipoLicencia',
         ],
         [
+<<<<<<< HEAD
             'text'       => 'CRUD TipoArma',
             'icon_color' => 'cyan',
             'icon'       => 'fas fa-user-secret', // Icono de un soldado con rifle
             'url'        => 'arma',
         ],
+=======
+            'text'       => 'CRUD Persona',
+            'icon_color' => 'green',
+            'url'        => 'Persona',
+        ],
+        [
+            'text'       => 'CRUD Reparticion',
+            'icon_color' => 'Limegreem',
+            'url'        => 'Reparticion',
+        ],
+       
+>>>>>>> 554e2234471abc608d7f231ed65c0a2843766dd0
     ],
 
     /*
