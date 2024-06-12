@@ -65,16 +65,6 @@ class Persona extends Migration
             $table->string('DeleterFullUserName', 250)->nullable();
             $table->string('DeleterIP', 250)->nullable();
 
-            $table->foreign('Gerencia')->references('id')->on('Gerencia');//
-            $table->foreign('Rol')->references('id')->on('Rol');//
-            $table->foreign('Archivo')->references('id')->on('Archivo');//
-            $table->foreign('Reparticion')->references('id')->on('Reparticion');// 
-            $table->foreign('DepDocId')->references('id')->on('DepDocId');//
-            $table->foreign('Arma')->references('id')->on('Arma');// 
-            $table->foreign('Cargo')->references('id')->on('Cargo');//
-            $table->foreign('Especialidad')->references('id')->on('Especialidad');//
-            $table->foreign('Grado')->references('id')->on('Grado');//
-            $table->foreign('TipoLicencia')->references('id')->on('TipoLicencia');
 
         });
     }
