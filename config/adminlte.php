@@ -388,6 +388,11 @@ return [
             'icon_color' => 'blue',
             'url'        => 'TipoLicencia',
         ],
+        [
+            'text'       => 'CRUD Rol',
+            'icon_color' => 'green',
+            'url'        => 'Rol',
+        ],
     ],
 
     /*
