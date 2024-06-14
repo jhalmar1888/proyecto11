@@ -63,7 +63,7 @@ class TipoLicenciaController extends Controller
     {
         $items = TipoLicencia::find($item);
         $items->delete();
-  
+
         return redirect()->route('TipoLicencia.index')->with('danger','Tipo Licencia fue Eliminado');
     }
 }

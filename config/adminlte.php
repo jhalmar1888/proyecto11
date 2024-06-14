@@ -389,12 +389,19 @@ return [
             'url'        => 'TipoLicencia',
         ],
         [
+<<<<<<< Updated upstream
             'text'       => 'CRUD departamento',
             'icon_color' => 'cyan',
             'icon'       => 'fas fa-user-secret', // Icono de un soldado con rifle
             'url'        => 'departamento',
         ],
         
+=======
+            'text'       => 'CRUD Cargo',
+            'icon_color' => 'red',
+            'url'        => 'Cargo',
+        ],
+>>>>>>> Stashed changes
     ],
 
     /*

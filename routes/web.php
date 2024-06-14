@@ -5,6 +5,7 @@ use App\Http\Controllers\TipoLicenciaController;
 use App\Http\Controllers\departamentoController;
 use App\Http\Controllers\GradoController;
 use App\Http\Controllers\SexoController;
+use App\Http\Controllers\CargoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,5 +45,10 @@ Route::get('/home', function() {
 
 
 Route::resource('TipoLicencia', TipoLicenciaController::class);
+<<<<<<< Updated upstream
 Route::resource('departamento', departamentoController::class);
  
+=======
+Route::resource('Cargo', CargoController::class);
+
+>>>>>>> Stashed changes
