@@ -10,17 +10,11 @@ use App\Http\Controllers\armaController;
 use App\Http\Controllers\GradoController;
 use App\Http\Controllers\SexoController;
 use App\Http\Controllers\PersonaController;
+<<<<<<< HEAD
+=======
+use App\Http\Controllers\TipoArchivoController;
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 
 Route::get('/', function () {
     return view('welcome');
@@ -30,11 +24,11 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
 Route::get('/home', function() {
     return view('home');
 })->name('home')->middleware('auth');
 
+<<<<<<< HEAD
 
 // /****************************************** TIPO LICENCIA *********************************/
 // Route::group(['prefix' => 'TipoLicencia'], function () {
@@ -55,6 +49,11 @@ Route::resource('departamento', departamentoController::class);
  
 =======
 Route::resource('Persona', PersonaController::class);
+=======
+Route::resource('TipoLicencia', TipoLicenciaController::class);
+Route::resource('Persona', PersonaController::class);
+Route::resource('TipoArchivo', TipoArchivoController::class);
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
 
 >>>>>>> f90d9030b15ed1a2e9ccc9d74d966c9106c50a59
 =======

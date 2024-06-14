@@ -390,6 +390,7 @@ return [
         ],
         [
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
             'text'       => 'CRUD departamento',
             'icon_color' => 'cyan',
@@ -400,10 +401,13 @@ return [
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
             'text'       => 'CRUD Persona',
             'icon_color' => 'green',
             'url'        => 'Persona',
         ],
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 >>>>>>> f90d9030b15ed1a2e9ccc9d74d966c9106c50a59
 =======
@@ -416,6 +420,13 @@ return [
         
 >>>>>>> 5db005e33ebfaa1399669cab54ae8ab894420ee9
 >>>>>>> Stashed changes
+=======
+        [
+            'text'       => 'CRUD TipoArchivo',
+            'icon_color' => 'green',
+            'url'        => 'TipoArchivo',
+        ],
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
     ],
 
     /*
