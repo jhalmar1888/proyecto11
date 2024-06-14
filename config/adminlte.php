@@ -390,6 +390,7 @@ return [
         ],
         [
 <<<<<<< HEAD
+<<<<<<< Updated upstream
             'text'       => 'CRUD departamento',
             'icon_color' => 'cyan',
             'icon'       => 'fas fa-user-secret', // Icono de un soldado con rifle
@@ -397,11 +398,24 @@ return [
         ],
         
 =======
+=======
+>>>>>>> Stashed changes
             'text'       => 'CRUD Persona',
             'icon_color' => 'green',
             'url'        => 'Persona',
         ],
+<<<<<<< Updated upstream
 >>>>>>> f90d9030b15ed1a2e9ccc9d74d966c9106c50a59
+=======
+=======
+            'text'       => 'CRUD TipoArma',
+            'icon_color' => 'cyan',
+            'icon'       => 'fas fa-user-secret', // Icono de un soldado con rifle
+            'url'        => 'arma',
+        ],
+        
+>>>>>>> 5db005e33ebfaa1399669cab54ae8ab894420ee9
+>>>>>>> Stashed changes
     ],
 
     /*

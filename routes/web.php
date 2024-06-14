@@ -2,7 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TipoLicenciaController;
+<<<<<<< Updated upstream
 use App\Http\Controllers\departamentoController;
+=======
+use App\Http\Controllers\armaController;
+>>>>>>> Stashed changes
 use App\Http\Controllers\GradoController;
 use App\Http\Controllers\SexoController;
 use App\Http\Controllers\PersonaController;
@@ -46,9 +50,18 @@ Route::get('/home', function() {
 
 Route::resource('TipoLicencia', TipoLicenciaController::class);
 <<<<<<< HEAD
+<<<<<<< Updated upstream
 Route::resource('departamento', departamentoController::class);
  
 =======
 Route::resource('Persona', PersonaController::class);
 
 >>>>>>> f90d9030b15ed1a2e9ccc9d74d966c9106c50a59
+=======
+Route::resource('Persona', PersonaController::class);
+
+=======
+Route::resource('arma', armaController::class);
+ 
+>>>>>>> 5db005e33ebfaa1399669cab54ae8ab894420ee9
+>>>>>>> Stashed changes
