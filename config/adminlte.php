@@ -389,10 +389,51 @@ return [
             'url'        => 'TipoLicencia',
         ],
         [
+<<<<<<< HEAD
             'text'       => 'CRUD Rol',
             'icon_color' => 'green',
             'url'        => 'Rol',
         ],
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+            'text'       => 'CRUD departamento',
+            'icon_color' => 'cyan',
+            'icon'       => 'fas fa-user-secret', // Icono de un soldado con rifle
+            'url'        => 'departamento',
+        ],
+        
+=======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
+            'text'       => 'CRUD Persona',
+            'icon_color' => 'green',
+            'url'        => 'Persona',
+        ],
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+>>>>>>> f90d9030b15ed1a2e9ccc9d74d966c9106c50a59
+=======
+=======
+            'text'       => 'CRUD TipoArma',
+            'icon_color' => 'cyan',
+            'icon'       => 'fas fa-user-secret', // Icono de un soldado con rifle
+            'url'        => 'arma',
+        ],
+        
+>>>>>>> 5db005e33ebfaa1399669cab54ae8ab894420ee9
+>>>>>>> Stashed changes
+=======
+        [
+            'text'       => 'CRUD TipoArchivo',
+            'icon_color' => 'green',
+            'url'        => 'TipoArchivo',
+        ],
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
+>>>>>>> 0dfff27258ac773f74c5e535a1b461fb90f9bea6
     ],
 
     /*
