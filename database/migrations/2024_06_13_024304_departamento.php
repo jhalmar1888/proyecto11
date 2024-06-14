@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class arma extends Migration
+class departamento extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class arma extends Migration
      */
     public function up()
     {
-        Schema::create('arma', function (Blueprint $table) {
+        Schema::create('departamento', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('Num')->unsigned()->nullable();
-            $table->string('arma', 250)->nullable();;
+            $table->string('departamento', 250)->nullable();;
 
             $table->nullableTimestamps();
             $table->SoftDeletes();
@@ -39,6 +39,6 @@ class arma extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('arma');
+        Schema::dropIfExists('departamento');
     }
 }

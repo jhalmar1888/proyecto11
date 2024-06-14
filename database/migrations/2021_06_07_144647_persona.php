@@ -15,6 +15,7 @@ class Persona extends Migration
     {
         Schema::create('Persona', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('Num')->unsigned()->nullable();
             $table->integer('Gerencia')->unsigned()->nullable();
             $table->integer('Rol')->unsigned()->nullable();
             $table->string('ApellidoPaterno',50)->nullable();
@@ -22,7 +23,7 @@ class Persona extends Migration
             $table->string('Nombres',50);
             $table->string('Persona',650);
             $table->string('Fotografia',250)->nullable();
-            $table->integer('Ci')->nullable();
+            $table->integer('Ci')->nullable();    
             $table->integer('DepDocId')->nullable();
             $table->integer('Grado')->nullable();
             $table->integer('Arma')->nullable();
@@ -65,16 +66,6 @@ class Persona extends Migration
             $table->string('DeleterFullUserName', 250)->nullable();
             $table->string('DeleterIP', 250)->nullable();
 
-            $table->foreign('Gerencia')->references('id')->on('Gerencia');//
-            $table->foreign('Rol')->references('id')->on('Rol');//
-            $table->foreign('Archivo')->references('id')->on('Archivo');//
-            $table->foreign('Reparticion')->references('id')->on('Reparticion');// 
-            $table->foreign('DepDocId')->references('id')->on('DepDocId');//
-            $table->foreign('Arma')->references('id')->on('Arma');// 
-            $table->foreign('Cargo')->references('id')->on('Cargo');//
-            $table->foreign('Especialidad')->references('id')->on('Especialidad');//
-            $table->foreign('Grado')->references('id')->on('Grado');//
-            $table->foreign('TipoLicencia')->references('id')->on('TipoLicencia');
 
         });
     }
