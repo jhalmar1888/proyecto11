@@ -10,21 +10,22 @@ use App\Http\Controllers\armaController;
 use App\Http\Controllers\GradoController;
 use App\Http\Controllers\SexoController;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Http\Controllers\CargoController;
 =======
 use App\Http\Controllers\PersonaController;
 >>>>>>> a05e1391d91ff54a2552f5d093cbde417bc4a680
+=======
+use App\Http\Controllers\RolController;
+=======
+use App\Http\Controllers\PersonaController;
+<<<<<<< HEAD
+=======
+use App\Http\Controllers\TipoArchivoController;
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
+>>>>>>> 0dfff27258ac773f74c5e535a1b461fb90f9bea6
+>>>>>>> 1cd8dc252efbd8502170cfb747b66164c5b55e65
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 
 Route::get('/', function () {
     return view('welcome');
@@ -34,11 +35,11 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
 Route::get('/home', function() {
     return view('home');
 })->name('home')->middleware('auth');
 
+<<<<<<< HEAD
 
 // /****************************************** TIPO LICENCIA *********************************/
 // Route::group(['prefix' => 'TipoLicencia'], function () {
@@ -54,9 +55,15 @@ Route::get('/home', function() {
 
 Route::resource('TipoLicencia', TipoLicenciaController::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> a05e1391d91ff54a2552f5d093cbde417bc4a680
+=======
+Route::resource('Rol', RolController::class);
+=======
+<<<<<<< HEAD
+>>>>>>> 1cd8dc252efbd8502170cfb747b66164c5b55e65
 <<<<<<< Updated upstream
 Route::resource('departamento', departamentoController::class);
  
@@ -66,6 +73,12 @@ Route::resource('Cargo', CargoController::class);
 
 =======
 Route::resource('Persona', PersonaController::class);
+=======
+Route::resource('TipoLicencia', TipoLicenciaController::class);
+Route::resource('Persona', PersonaController::class);
+Route::resource('TipoArchivo', TipoArchivoController::class);
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
+>>>>>>> 0dfff27258ac773f74c5e535a1b461fb90f9bea6
 
 >>>>>>> f90d9030b15ed1a2e9ccc9d74d966c9106c50a59
 =======

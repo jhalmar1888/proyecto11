@@ -3,7 +3,11 @@
 @section('title', 'AdminLTE')
 
 @section('content_header')
+<<<<<<< HEAD
     <h1 class="m-0 text-dark">PERSONA</h1>
+=======
+    <h1 class="m-0 text-dark">TIPO LICENCIA</h1>
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
 @stop
 
 @section('content')
@@ -11,7 +15,11 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
+<<<<<<< HEAD
                     <p class="mb-0">Persona</p>
+=======
+                    <p class="mb-0">TIPO LICENCIA</p>
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
                 </div>
             </div>
             <section class="content">
@@ -19,6 +27,7 @@
                         <div class="col-md-6">
                             <div class="card card-primary">
                               <div class="card-header">
+<<<<<<< HEAD
                                 <h3 class="card-title">Editar persona</h3>
                               </div>
                               <form action="{{ route('Persona.update',$item->id) }}" method="POST">
@@ -103,6 +112,24 @@
                                     <input type="text" class="form-control" name="Reparticion" value="{{ $item->Reparticion }}" placeholder="Reparticion">
                                   </div>
                                 </div>
+=======
+                                <h3 class="card-title">Tipo Licencia</h3>
+                              </div>
+                              <form action="{{ route('TipoLicencia.update',$item->id) }}" method="POST">
+                                @csrf
+                                @method('PUT')
+                                <div class="card-body">
+                                  <div class="form-group">
+                                    <label for="Num">Num</label>
+                                    <input type="text" class="form-control" value="{{ $item->Num }}"  name="Num" placeholder="Numero">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="TipoLicencia">Tipo Licencia</label>
+                                    <input type="text" class="form-control" value="{{ $item->TipoLicencia }}" name="TipoLicencia" placeholder="Tipo de Licencia">
+                                  </div>
+                                </div>
+                
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
                                 <div class="card-footer">
                                   <button class="btn btn-warning">Editar</button>
                                   {{-- <button type="submit" class="btn btn-warning">Editar</button>
@@ -111,7 +138,11 @@
                               </form>
                             </div>
                         </div>
+<<<<<<< HEAD
                     </div>
+=======
+                    </div> 
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
             </section>
         </div>
     </div>

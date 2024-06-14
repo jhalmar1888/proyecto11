@@ -390,9 +390,19 @@ return [
         ],
         [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> a05e1391d91ff54a2552f5d093cbde417bc4a680
+=======
+            'text'       => 'CRUD Rol',
+            'icon_color' => 'green',
+            'url'        => 'Rol',
+        ],
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 1cd8dc252efbd8502170cfb747b66164c5b55e65
 <<<<<<< Updated upstream
             'text'       => 'CRUD departamento',
             'icon_color' => 'cyan',
@@ -409,10 +419,13 @@ return [
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
             'text'       => 'CRUD Persona',
             'icon_color' => 'green',
             'url'        => 'Persona',
         ],
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 >>>>>>> f90d9030b15ed1a2e9ccc9d74d966c9106c50a59
 =======
@@ -426,6 +439,14 @@ return [
 >>>>>>> 5db005e33ebfaa1399669cab54ae8ab894420ee9
 >>>>>>> a05e1391d91ff54a2552f5d093cbde417bc4a680
 >>>>>>> Stashed changes
+=======
+        [
+            'text'       => 'CRUD TipoArchivo',
+            'icon_color' => 'green',
+            'url'        => 'TipoArchivo',
+        ],
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
+>>>>>>> 0dfff27258ac773f74c5e535a1b461fb90f9bea6
     ],
 
     /*

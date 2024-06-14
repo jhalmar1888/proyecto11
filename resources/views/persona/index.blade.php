@@ -42,6 +42,7 @@
 
                 <table class="table table-bordered">
                     <tr>
+<<<<<<< HEAD
                         <th>ID</th>
                         <th>Gerencia</th>
                         <th>Rol</th>
@@ -62,11 +63,17 @@
                         <th>Sexo</th>
                         <th>Archivo</th>
                         <th>Reparticion</th>
+=======
+                        <th>No</th>
+                        <th>Num</th>
+                        <th>Tipo Licencia</th>
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
                         <th width="280px">Acción</th>
                     </tr>
                     @foreach ($items as $item)
                     <tr>
                         <td>{{ ++$i }}</td>
+<<<<<<< HEAD
                         <td>{{ $item->Gerencia }}</td>
                         <td>{{ $item->Rol }}</td>
                         <td>{{ $item->ApellidoPaterno }}</td>
@@ -92,11 +99,25 @@
                                 <a class="btn btn-info" href="{{ route('Persona.show',$item->id) }}">Ver</a>
 
                                 <a class="btn btn-primary" href="{{ route('Persona.edit',$item->id) }}">Editar</a>
+=======
+                        <td>{{ $item->Num }}</td>
+                        <td>{{ $item->TipoLicencia }}</td>
+                        <td>
+                            <form action="{{ route('TipoLicencia.destroy',$item->id) }}" method="POST">
+
+                                <a class="btn btn-info" href="{{ route('TipoLicencia.show',$item->id) }}">Ver</a>
+
+                                <a class="btn btn-primary" href="{{ route('TipoLicencia.edit',$item->id) }}">Editar</a>
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
 
                                 @csrf
                                 @method('DELETE')
 
+<<<<<<< HEAD
                                 <button type="submit" href="{{ route('Persona.destroy',$item->id) }}" class="btn btn-danger">Eliminar</button>
+=======
+                                <button type="submit" href="{{ route('TipoLicencia.destroy',$item->id) }}" class="btn btn-danger">Eliminar</button>
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
                             </form>
                         </td>
                     </tr>
