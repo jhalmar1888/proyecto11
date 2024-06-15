@@ -390,11 +390,55 @@ return [
         ],
         [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a05e1391d91ff54a2552f5d093cbde417bc4a680
+=======
+            'text'       => 'CRUD Rol',
+            'icon_color' => 'green',
+            'url'        => 'Rol',
+        ],
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 1cd8dc252efbd8502170cfb747b66164c5b55e65
+<<<<<<< Updated upstream
+            'text'       => 'CRUD departamento',
+            'icon_color' => 'cyan',
+            'icon'       => 'fas fa-user-secret', // Icono de un soldado con rifle
+            'url'        => 'departamento',
+        ],
+        
+=======
+<<<<<<< HEAD
+            'text'       => 'CRUD Cargo',
+            'icon_color' => 'red',
+            'url'        => 'Cargo',
+        ],
+=======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
+            'text'       => 'CRUD Persona',
+            'icon_color' => 'green',
+            'url'        => 'Persona',
+        ],
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+>>>>>>> f90d9030b15ed1a2e9ccc9d74d966c9106c50a59
+=======
+=======
+>>>>>>> 9b41873977db90818e39464b925820aa0fddcfcd
             'text'       => 'CRUD TipoArma',
             'icon_color' => 'cyan',
             'icon'       => 'fas fa-user-secret', // Icono de un soldado con rifle
             'url'        => 'arma',
         ],
+<<<<<<< HEAD
 =======
             'text'       => 'CRUD Persona',
             'icon_color' => 'green',
@@ -407,6 +451,20 @@ return [
         ],
        
 >>>>>>> 554e2234471abc608d7f231ed65c0a2843766dd0
+=======
+        
+>>>>>>> 5db005e33ebfaa1399669cab54ae8ab894420ee9
+>>>>>>> a05e1391d91ff54a2552f5d093cbde417bc4a680
+>>>>>>> Stashed changes
+=======
+        [
+            'text'       => 'CRUD TipoArchivo',
+            'icon_color' => 'green',
+            'url'        => 'TipoArchivo',
+        ],
+>>>>>>> 805e43479cc6b27115825b87b27e584d17206120
+>>>>>>> 0dfff27258ac773f74c5e535a1b461fb90f9bea6
+>>>>>>> 9b41873977db90818e39464b925820aa0fddcfcd
     ],
 
     /*

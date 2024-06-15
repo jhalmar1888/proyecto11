@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class armaRequest extends FormRequest
+class TipoArchivoRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,8 +25,4 @@ class armaRequest extends FormRequest
             //
         ];
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 9b41873977db90818e39464b925820aa0fddcfcd

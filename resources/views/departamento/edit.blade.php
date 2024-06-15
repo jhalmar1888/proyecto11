@@ -3,7 +3,7 @@
 @section('title', 'AdminLTE')
 
 @section('content_header')
-    <h1 class="m-0 text-dark">ARMA (Escuela Militar de Ingenieria)</h1>
+    <h1 class="m-0 text-dark">departamento (Escuela Militar de Ingenieria)</h1>
 @stop
 
 @section('content')
@@ -21,7 +21,7 @@
                               <div class="card-header">
                               <h3 class="card-title">Editar datos INGRESADOS</h3>
                               </div>
-                              <form action="{{ route('arma.update',$item->id) }}" method="POST">
+                              <form action="{{ route('departamento.update',$item->id) }}" method="POST">
                                 @csrf
                                 @method('PUT')
                                 <div class="card-body">
@@ -30,8 +30,8 @@
                                     <input type="text" class="form-control" value="{{ $item->Num }}"  name="Num" placeholder="Numero">
                                   </div>
                                   <div class="form-group">
-                                    <label for="TipoLicencia">Arma la que pertenece</label>
-                                    <input type="text" class="form-control" value="{{ $item->arma }}" name="arma" placeholder="arma">
+                                    <label for="departamento">Arma la que pertenece</label>
+                                    <input type="text" class="form-control" value="{{ $item->departamento }}" name="departamento" placeholder="departamento">
                                   </div>
                                 </div>
                 
@@ -47,8 +47,4 @@
             </section>
         </div>
     </div>
-<<<<<<< HEAD
 @stop
-=======
-@stop
->>>>>>> 9b41873977db90818e39464b925820aa0fddcfcd

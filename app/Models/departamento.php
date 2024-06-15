@@ -5,12 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class arma extends Model
+class departamento extends Model
 {
     use HasFactory;
-    protected $table = 'arma';
-<<<<<<< HEAD
+    protected $table = 'departamento';
 }
-=======
-}
->>>>>>> 9b41873977db90818e39464b925820aa0fddcfcd

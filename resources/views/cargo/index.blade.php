@@ -3,7 +3,7 @@
 @section('title', 'AdminLTE')
 
 @section('content_header')
-    <h1 class="m-0 text-dark">ARMA (ESCUELA MILITAR DE INGENIERIA)</h1>
+    <h1 class="m-0 text-dark">CARGO</h1>
 @stop
 
 @section('content')
@@ -11,7 +11,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <p class="mb-0">Estudiantes militares</p>
+                    <p class="mb-0">CARGO</p>
                 </div>
             </div>
             <section class="content">
@@ -19,7 +19,7 @@
                   <div class="row">
                     <div class="col-lg-12 margin-tb">
                         <div class="pull-right">
-                            <a class="btn btn-success" href="{{ route('arma.create') }}"> Crear Nuevo</a>
+                            <a class="btn btn-success" href="{{ route('Cargo.create') }}"> Crear Nuevo</a>
                         </div>
                     </div>
                 </div>
@@ -42,27 +42,27 @@
                
                 <table class="table table-bordered">
                     <tr>
-                        <th>N°</th>
-                        <th>Codigo</th>
-                        <th>Tipo de arma que pertenece</th>
+                        <th>No</th>
+                        <th>Num</th>
+                        <th>Cargo</th>
                         <th width="280px">Acción</th>
                     </tr>
                     @foreach ($items as $item)
                     <tr>
                         <td>{{ ++$i }}</td>
                         <td>{{ $item->Num }}</td>
-                        <td>{{ $item->arma }}</td>
+                        <td>{{ $item->Cargo }}</td>
                         <td>
-                            <form action="{{ route('arma.destroy',$item->id) }}" method="POST">
+                            <form action="{{ route('Cargo.destroy',$item->id) }}" method="POST">
                
-                                <a class="btn btn-info" href="{{ route('arma.show',$item->id) }}">Ver</a>
+                                <a class="btn btn-info" href="{{ route('Cargo.show',$item->id) }}">Ver</a>
                 
-                                <a class="btn btn-primary" href="{{ route('arma.edit',$item->id) }}">Editar</a>
+                                <a class="btn btn-primary" href="{{ route('Cargo.edit',$item->id) }}">Editar</a>
                
                                 @csrf
                                 @method('DELETE')
                   
-                                <button type="submit" href="{{ route('arma.destroy',$item->id) }}" class="btn btn-danger">Eliminar</button>
+                                <button type="submit" href="{{ route('Cargo.destroy',$item->id) }}" class="btn btn-danger">Eliminar</button>
                             </form>
                         </td>
                     </tr>
@@ -75,8 +75,4 @@
             </section>
         </div>
     </div>
-<<<<<<< HEAD
 @stop
-=======
-@stop
->>>>>>> 9b41873977db90818e39464b925820aa0fddcfcd

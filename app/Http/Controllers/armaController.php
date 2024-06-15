@@ -66,4 +66,8 @@ class armaController extends Controller
   
         return redirect()->route('arma.index')->with('danger','Tipo Arma fue Eliminado');
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9b41873977db90818e39464b925820aa0fddcfcd

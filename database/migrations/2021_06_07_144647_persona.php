@@ -14,15 +14,22 @@ class Persona extends Migration
     public function up()
     {
         Schema::create('Persona', function (Blueprint $table) {
+<<<<<<< HEAD
             $table->increments('id');    // sgto. Villasante 
             $table->integer('Gerencia')->unsigned()->nullable(); 
             $table->integer('Rol')->unsigned()->nullable(); 
+=======
+            $table->increments('id');
+            $table->integer('Num')->unsigned()->nullable();
+            $table->integer('Gerencia')->unsigned()->nullable();
+            $table->integer('Rol')->unsigned()->nullable();
+>>>>>>> 9b41873977db90818e39464b925820aa0fddcfcd
             $table->string('ApellidoPaterno',50)->nullable();
             $table->string('ApellidoMaterno',50)->nullable();
             $table->string('Nombres',50);
             $table->string('Persona',650);
             $table->string('Fotografia',250)->nullable();
-            $table->integer('Ci')->nullable();
+            $table->integer('Ci')->nullable();    
             $table->integer('DepDocId')->nullable();
             $table->string('Complemento',20)->nullable();
             $table->integer('Grado')->nullable();
@@ -66,6 +73,7 @@ class Persona extends Migration
             $table->string('DeleterFullUserName', 250)->nullable();
             $table->string('DeleterIP', 250)->nullable();
 
+<<<<<<< HEAD
             $table->foreign('Gerencia')->references('id')->on('Gerencia');// Siles
             $table->foreign('Rol')->references('id')->on('Rol');// Sgto Lecoña
             $table->foreign('Archivo')->references('id')->on('Archivo');// quispe
@@ -76,6 +84,8 @@ class Persona extends Migration
             $table->foreign('Especialidad')->references('id')->on('Especialidad');// Flores
             $table->foreign('Grado')->references('id')->on('Grado');// Fernandez
             $table->foreign('TipoLicencia')->references('id')->on('TipoLicencia');
+=======
+>>>>>>> 9b41873977db90818e39464b925820aa0fddcfcd
 
         });
     }

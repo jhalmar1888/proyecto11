@@ -3,7 +3,7 @@
 @section('title', 'AdminLTE')
 
 @section('content_header')
-    <h1 class="m-0 text-dark">ARMA (Escuela Militar de Ingenieria)</h1>
+    <h1 class="m-0 text-dark">TIPO ARCHIVO</h1>
 @stop
 
 @section('content')
@@ -11,7 +11,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <p class="mb-0">Editar datos</p>
+                    <p class="mb-0">TIPO ARCHIVO</p>
                 </div>
             </div>
             <section class="content">
@@ -19,20 +19,27 @@
                         <div class="col-md-6">
                             <div class="card card-primary">
                               <div class="card-header">
-                              <h3 class="card-title">Editar datos INGRESADOS</h3>
+                                <h3 class="card-title">Tipo Archivo</h3>
                               </div>
-                              <form action="{{ route('arma.update',$item->id) }}" method="POST">
+                              <form action="{{ route('TipoArchivo.update',$item->id) }}" method="POST">
                                 @csrf
                                 @method('PUT')
                                 <div class="card-body">
+
                                   <div class="form-group">
-                                    <label for="Num">N° CI</label>
-                                    <input type="text" class="form-control" value="{{ $item->Num }}"  name="Num" placeholder="Numero">
+                                    <label for="TipoArchivo">Tipo Archivo</label>
+                                    <input type="text" class="form-control" value="{{ $item->TipoArchivo }}" name="TipoArchivo" placeholder="TipoArchivo">
                                   </div>
+
                                   <div class="form-group">
-                                    <label for="TipoLicencia">Arma la que pertenece</label>
-                                    <input type="text" class="form-control" value="{{ $item->arma }}" name="arma" placeholder="arma">
+                                    <label for="Descripcion">Descripcion</label>
+                                    <input type="text" class="form-control" value="{{ $item->Descripcion }}"  name="Descripcion" placeholder="Descripcion">
                                   </div>
+                                  
+
+
+
+
                                 </div>
                 
                                 <div class="card-footer">
@@ -47,8 +54,4 @@
             </section>
         </div>
     </div>
-<<<<<<< HEAD
 @stop
-=======
-@stop
->>>>>>> 9b41873977db90818e39464b925820aa0fddcfcd
