@@ -6,6 +6,7 @@ use App\Http\Controllers\TipoLicenciaController;
 use App\Http\Controllers\armaController;
 use App\Http\Controllers\GradoController;
 use App\Http\Controllers\SexoController;
+<<<<<<< Updated upstream
 use App\Http\Controllers\PersonaController;
 use App\Http\Controllers\ReparticionController;
 =======
@@ -33,6 +34,9 @@ use App\Http\Controllers\TipoArchivoController;
 >>>>>>> 0dfff27258ac773f74c5e535a1b461fb90f9bea6
 >>>>>>> 1cd8dc252efbd8502170cfb747b66164c5b55e65
 >>>>>>> 9b41873977db90818e39464b925820aa0fddcfcd
+=======
+use App\Http\Controllers\EspecialidadController;
+>>>>>>> Stashed changes
 
 
 Route::get('/', function () {
@@ -62,10 +66,14 @@ Route::get('/home', function() {
 
 
 Route::resource('TipoLicencia', TipoLicenciaController::class);
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
 Route::resource('arma', armaController::class);
 =======
+=======
+Route::resource('Especialidad', EspecialidadController::class);
+>>>>>>> Stashed changes
 
 Route::resource('Persona', PersonaController::class);
 Route::resource('Reparticion', ReparticionController::class);

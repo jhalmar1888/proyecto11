@@ -389,6 +389,7 @@ return [
             'url'        => 'TipoLicencia',
         ],
         [
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -465,6 +466,12 @@ return [
 >>>>>>> 805e43479cc6b27115825b87b27e584d17206120
 >>>>>>> 0dfff27258ac773f74c5e535a1b461fb90f9bea6
 >>>>>>> 9b41873977db90818e39464b925820aa0fddcfcd
+=======
+            'text'       => 'CRUD Especialidad',
+            'icon_color' => 'green',
+            'url'        => 'Especialidad',
+        ],
+>>>>>>> Stashed changes
     ],
 
     /*
