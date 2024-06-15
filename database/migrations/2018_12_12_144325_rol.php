@@ -16,7 +16,7 @@ class Rol extends Migration
         Schema::create('Rol', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('Num')->unsigned()->nullable();
-            $table->string('Rol', 250)->nullable();;
+            $table->string('Rol', 250)->nullable();
 
             $table->nullableTimestamps();
             $table->SoftDeletes();
