@@ -43,4 +43,5 @@ Route::get('/home', function() {
 
 
 Route::resource('TipoLicencia', TipoLicenciaController::class);
+Route::resource('Grado', GradoController::class);
 
